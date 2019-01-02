@@ -1,0 +1,205 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.0 (14/7/16)
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com) and Harsh (harsh.gadgil@gmail.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+
+% Command for printing skill overview bubbles
+% \newcommand\skills{ 
+% ~
+% 	\smartdiagram[bubble diagram]{
+%         \textbf{Data}\\\textbf{Engineering},
+%         \textbf{Full Stack}\\\textbf{Dev},
+%         \textbf{~~~~~~~~OOP~~~~~~~~~},
+%         \textbf{~~~~~~Machine~~~~~~}\\\textbf{~~Learning~~},
+%         \textbf{~~~~~DevOps~~~~~}
+%     }
+% }
+
+% Programming skill bars
+
+\programming{ {Assembly $\textbullet$ VHDL / 2},
+{HTML $\textbullet$ PHP $\textbullet$ SQL  / 3}, 
+{C++ $\textbullet$  \large \LaTeX / 3.5}, 
+{C  $\textbullet$ Python  $\textbullet$ Java / 4}}
+
+% Projects text
+
+\education{
+\textbf{B.S., Computer Science} (GPA: 3.5) \\
+University of Nebraska-Lincoln \\
+2017 - 2021 | Nebraska, America \\
+Courses: \\
+\textbf{CSCE 423:} Dsgn \& Analys of Algorithms \\
+\textbf{CSCE 361:} Software Engineering \\
+
+\textbf{High School Diploma} (GPA: 3.94) \\
+Lincoln Christian Highschool\\
+2016 - 2017 | Nebraska, America
+}
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\cvname{Huy Vuong} % Your name
+\cvjobtitle{B.S., Computer Science} % Job
+% title/career
+
+\cvlinkedin{/in/huynvuong/}
+\cvgithub{HuyNVuong}
+\cvnumberphone{(415) 818 7070} % Phone number
+\cvsite{cse.unl.edu/ \textasciitilde hvuong/} % Personal website
+\cvmail{huynguyenvuong99@gmail.com} % Email address
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makeprofile % Print the sidebar
+ \section{Summary}
+    I am a motivated Computer Science students who is actively looking for internship
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\begin{twenty} % Environment for a list with descriptions
+\twentyitem
+    	{Aug 2018 -}
+		{Present}
+        {Undergraduate Teaching Assistant}
+        {}
+        {}
+        {\begin{itemize}
+        \item Taught Computer Science I: Foundation of Computer Science and currently teaching Computer Science II: Object-Oriented Programming and Computer Science III: Data Structure and Algorithms.
+        \item Grading, Supervising lab, hack session
+        \item Holding office hours to help students with course related problems
+        \item Helping students familiarize with several different programming languages, debugging as well as classifying different types of errors.
+        \item Guiding students to design an efficient and well organized project.
+        \item Introduce students to Algorithm Analysis and Big-O notation
+        \item Presenting students at deriving different algorithms as well as data structures 
+        \end{itemize}}
+        \\
+	\twentyitem
+    	{May 2018 -}
+		{Sep 2018}
+        {Student Worker - Information Technology Service}
+        {}
+        {}
+        {
+        {\begin{itemize}
+        \item Provided general university information and technical support
+        \item Troubleshooted university accounts and technical related problems
+        \item Directed switchboards call around university
+    \end{itemize}}
+        }
+    
+        
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 INVOLVEMENTS
+%----------------------------------------------------------------------------------------
+
+\section{Involvements}
+\begin{twenty}
+	\twentyitem
+    	{Dec 2018}
+		{}
+        {Advent of Code - 2018}
+        {\href{https://github.com/HuyNVuong/AdventOfCode}{Link to GitHub}}
+        {}
+        {
+        25 days of programming, with each day present a new challenges
+        {\begin{itemize}
+        \item Practiced my algorithm as well as problem solving skills.
+        \item Manipulated directly to test cases to get the correct answer.
+        \item Learned many features of Python to help creating test cases as well as solving them faster and more convinient.
+		\end{itemize}}
+        }
+    \\
+    \twentyitem
+    	{Oct 2018}
+		{}
+        {ACM ICPC Local - 2018}
+        {\href{https://github.com/HuyNVuong/ACM-2018}{Link to GitHub}}
+        {}
+        {
+        Local North America ACM contest
+        {\begin{itemize}
+        \item Team up with other 2 members to write algorithms to solve different type of problems in 5 hours.
+		\end{itemize}}
+        }
+    \\
+    \twentyitem
+    	{Aug 2018}
+		{- Present}
+        {CSE Ambassador}
+        {}
+        {}
+        {
+        {\begin{itemize}
+        \item Back-end programmer in Dev team .
+        \item Phase developer for Coding and Coffee.
+		\end{itemize}}
+        }
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 PROJECTS
+%----------------------------------------------------------------------------------------
+\section{Projects}
+\begin{twenty}
+	\twentyitem
+    	{Dec 2018 - }
+		{Present}
+        {Simple video game}
+        {} % Link to GitHub goes here
+        {}
+        {
+       	Building different type of simple classic game from scratch to understand how's game are built as well as to improve my programming skills
+       	
+       	\textbf{Game developed:}
+        {\begin{itemize}
+        \item Snake
+        \item Tetris
+		\end{itemize}}
+        }
+    \\
+    \twentyitem
+    	{Mar 2018}
+		{}
+        {Nebraska Livestock Visualization}
+        {\href{https://github.com/HuyNVuong/Nebraska-livestock-Visualisation}{Link to GitHub}} % Link to GitHub goes here
+        {}
+        {
+       	Hackathon hosted by UNL - 24 hours programming contest
+       	
+       	\textbf{Achivement:}
+        {\begin{itemize}
+        \item Created dynamic visualization of large amount of datas collected over times
+        \item Familiarized with Front and Back end web development.
+        \item Familiarized and used with PHP, JavaScript, HTML, CSS, MongoDB
+		\end{itemize}}
+        }
+\end{twenty}
+
+\end{document} 
