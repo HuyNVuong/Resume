@@ -259,8 +259,10 @@
         \vspace{3mm}
         
       \profilesection{Programming}{1.85cm} 
-
-		 \programming
+  
+      \profilesection{\fontsize{11}{11}\selectfont 0 LOCs}{3.3cm}{ 5000 LOCs}
+      
+	  \programming
   \end{textblock}
 }
 
