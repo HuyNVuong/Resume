@@ -155,7 +155,7 @@
 \newcommand\programming[1]{ 
 	\renewcommand{\programming}{
 		\begin{tikzpicture}
-         	\node [above right] at (0, 4) {$0 \: LOC \: \arrow{3.2} \: 5000 \: LOC$};
+         	\node [above right] at (0, 6) {$0 \: LOC \: \arrow{3.2} \: 5000 \: LOC$};
 			\foreach [count=\i] \x/\y in {#1}{
 				\draw[fill=maingray,maingray] (0,\i) rectangle (6,\i+0.4);
 				\draw[fill=white,mainblue](0,\i) rectangle (\y,\i+0.4);
@@ -260,7 +260,7 @@
         
       \profilesection{Programming}{1.85cm} 
   
-      \profilesection{\fontsize{11}{11}\selectfont 0 LOCs}{3.3cm}{ 5000 LOCs}
+      %\profilesection{\fontsize{10}{10}\selectfont 0 LOCs }{3.3cm}{  5000 LOCs}
       
 	  \programming
   \end{textblock}
