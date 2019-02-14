@@ -65,8 +65,6 @@
 \definecolor{mainblue}{HTML}{0E5484}
 \definecolor{maingray}{HTML}{B9B9B9}
 
-\definecolor{pblue}{HTML}{0395DE}
-
 \definecolor{darkgray}{HTML}{333333}
 \definecolor{gray}{HTML}{4D4D4D}
 \definecolor{lightgray}{HTML}{999999}
@@ -276,10 +274,10 @@
 	\tikz[baseline=(char.base)]\node[anchor=north west, draw,rectangle, rounded corners, inner sep=1.6pt, minimum size=5.5mm, text height=3.6mm, fill=#2,#2,text=white](char){#1};%
 }
 
-% \sectioncolor{\color{pblue}
+%\sectioncolor{\color{pblue}
 \def\@sectioncolor#1#2#3{%
 	{%
-		\color{pblue} #1#2#3%
+		\color{gray} #1#2#3%
 	}%
 }
 
