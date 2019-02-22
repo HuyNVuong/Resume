@@ -86,8 +86,8 @@
 \definecolor{materialred}{HTML}{FF4436}
 \definecolor{materialorange}{HTML}{FF5722}
 \definecolor{linkedin}{HTML}{0085AE}
-\definecolor{test}{HTML}{0077be}
-\definecolor{yt}{HTML}{c71610}
+\definecolor{test}{HTML}{0085AE}
+\definecolor{yt}{HTML}{0085AE}
 
 \ifdefined\@cv@print
   \colorlet{green}{gray}
@@ -184,7 +184,7 @@
     %------------------------------------------------
     
         \vspace{4mm}
-    {\Huge\color{pblue}\cvname}
+    {\Huge\color{mainblue}\cvname}
     
     \vspace{2mm}
 
@@ -208,14 +208,14 @@
       \ifthenelse{\equal{\href{\cvsite}{\cvsite}}{}}{}{
             {$
               \begin{array}{l}
-              \hspace{2.8mm} \huge \textnormal{\textcolor{test}{\faGlobe}}
+              \hspace{2.8mm} \huge \textnormal{\textcolor{mainblue}{\faGlobe}}
               \end{array}
               $} 
             & \href{http://\cvsite}{\cvsite} \\}
       \ifthenelse{\equal{\cvmail}{}}{}{
             {$
               \begin{array}{l}
-              \hspace{2.5mm} \huge \textnormal{\textcolor{yt}{\faEnvelopeO}}
+              \hspace{2.5mm} \huge \textnormal{\textcolor{mainblue}{\faEnvelopeO}}
               \end{array}
               $} 
             & \href{mailto:\cvmail}{\cvmail} \\}
@@ -223,7 +223,7 @@
        \ifthenelse{\equal{\cvlinkedin}{}}{}{
             {$
               \begin{array}{l}
-              \hspace{3mm} \huge \textnormal{\textcolor{linkedin}{\faLinkedin}}
+              \hspace{3mm} \huge \textnormal{\textcolor{mainblue}{\faLinkedin}}
               \end{array}
               $} & \href{https://www.linkedin.com\cvlinkedin}{\cvlinkedin} \\
             }  
@@ -277,7 +277,7 @@
 %\sectioncolor{\color{pblue}
 \def\@sectioncolor#1#2#3{%
 	{%
-		\color{gray} #1#2#3%
+		\color{mainblue} #1#2#3%
 	}%
 }
 
@@ -285,7 +285,7 @@
 \renewcommand{\section}[1]{
   \par\vspace{\parskip}
 	{%
-		\LARGE\headingfont\color{headercolor}%
+		\LARGE\headingfont\color{mainblue}%
 		\@sectioncolor #1%
 	}
   \par\vspace{1mm}
@@ -293,7 +293,7 @@
 
 \renewcommand{\subsection}[1]{
 	\par\vspace{.5\parskip}{%
-		\Large\headingfont\color{headercolor} #1%
+		\Large\headingfont\color{mainblue} %
 	}
 	\par\vspace{.25\parskip}%
 }
