@@ -71,7 +71,7 @@
 \definecolor{green}{HTML}{C2E15F}
 \definecolor{orange}{HTML}{FDA333}
 \definecolor{purple}{HTML}{D3A4F9}
-\definecolor{red}{HTML}{FB4485}
+\definecolor{red}{HTML}{b23121}
 \definecolor{blue}{HTML}{6CE0F1}
 \definecolor{pblue}{HTML}{0395DE}
 \definecolor{materialpurple}{HTML}{9C27B0}
@@ -84,7 +84,7 @@
 \definecolor{materialamber}{HTML}{FFC107}
 \definecolor{materialbrown}{HTML}{795548}
 \definecolor{materialred}{HTML}{FF4436}
-\definecolor{materialorange}{HTML}{FF5722}
+\definecolor{materialorange}{HTML}{fc6d26}
 \definecolor{linkedin}{HTML}{0085AE}
 \definecolor{test}{HTML}{0085AE}
 \definecolor{yt}{HTML}{0085AE}
@@ -137,6 +137,7 @@
 \newcommand{\cvdate}[1]{\renewcommand{\cvdate}{#1}}
 \newcommand{\cvlinkedin}[1]{\renewcommand{\cvlinkedin}{#1}}
 \newcommand{\cvgithub}[1]{\renewcommand{\cvgithub}{#1}}
+\newcommand{\cvgitlab}[1]{\renewcommand{\cvgitlab}{#1}}
 \newcommand{\cvmail}[1]{\renewcommand{\cvmail}{#1}}
 \newcommand{\cvnumberphone}[1]{\renewcommand{\cvnumberphone}{#1}}
 \newcommand{\cvaddress}[1]{\renewcommand{\cvaddress}{#1}}
@@ -200,7 +201,7 @@
       \ifthenelse{\equal{\cvnumberphone}{}}{}{
       		{$
               \begin{array}{l}
-              \hspace{4mm} \Huge \textnormal{\faMobile} 
+              \hspace{2.67mm} \Huge \textnormal{\faMobile} 
               \end{array}
               $} 
             & \cvnumberphone\\}
@@ -208,14 +209,14 @@
       \ifthenelse{\equal{\href{\cvsite}{\cvsite}}{}}{}{
             {$
               \begin{array}{l}
-              \hspace{2.8mm} \huge \textnormal{\textcolor{mainblue}{\faGlobe}}
+              \hspace{1.867mm} \huge \textnormal{\textcolor{mainblue}{\faGlobe}}
               \end{array}
               $} 
             & \href{http://\cvsite}{\cvsite} \\}
       \ifthenelse{\equal{\cvmail}{}}{}{
             {$
               \begin{array}{l}
-              \hspace{2.5mm} \huge \textnormal{\textcolor{mainblue}{\faEnvelopeO}}
+              \hspace{1.67mm} \huge \textnormal{\textcolor{red}{\faEnvelopeO}}
               \end{array}
               $} 
             & \href{mailto:\cvmail}{\cvmail} \\}
@@ -223,17 +224,24 @@
        \ifthenelse{\equal{\cvlinkedin}{}}{}{
             {$
               \begin{array}{l}
-              \hspace{3mm} \huge \textnormal{\textcolor{mainblue}{\faLinkedin}}
+              \hspace{2mm} \huge \textnormal{\textcolor{mainblue}{\faLinkedin}}
               \end{array}
               $} & \href{https://www.linkedin.com\cvlinkedin}{\cvlinkedin} \\
             }  
         \ifthenelse{\equal{\cvgithub}{}}{}{
             {$
               \begin{array}{l}
-              \hspace{3mm} \huge \textnormal{\faGithub}
+              \hspace{2mm} \huge \textnormal{\faGithub}
               \end{array}
               $} & \href{https://www.github.com/\cvgithub}{\cvgithub} \\
-            }   
+            }  
+        \ifthenelse{\equal{\cvgitlab}{}}{}{
+            {$
+              \begin{array}{l}
+              \hspace{2mm} \huge \textnormal{\textcolor{materialorange}{\faGitlab}}
+              \end{array}
+              $} & \href{https://git.unl.edu/\cvgitlab}{\cvgitlab} \\
+            }  
             
     \end{tabular}
 
