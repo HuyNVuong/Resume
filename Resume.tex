@@ -1,244 +1,241 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Twenty Seconds Resume/CV
-% LaTeX Template
-% Version 1.0 (14/7/16)
-%
-% Original author:
-% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
-% Vel (vel@LaTeXTemplates.com) and Harsh (harsh.gadgil@gmail.com)
-%
-% License:
-% The MIT License (see included LICENSE file)
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-------------------------
+% Resume in Latex
+% Author : Huy Vuong
+% Adapted from: Sourabh Bajaj
+% License : MIT
+%------------------------
 
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
+\documentclass[letterpaper,10pt]{article}
 
-\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex, hidelinks]{hyperref}
+\usepackage{fancyhdr}
 
+\usepackage[charter]{mathdesign} % Bitstream Charter
+% \usepackage{newpxtext,newpxmath} % Palatino
 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
 
-% Programming skill bars
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.50in}
+\addtolength{\evensidemargin}{-0.50in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
 
-\programming{
-{C  $\textbullet$ C++ / 3},
-{HTML $\textbullet$ CSS  / 3}, 
-{Git $\textbullet$ CI\/CD / 3},
-{\LaTeX  / 4},
-{Javascript $\textbullet$ Typescript / 4}, 
-{Python  $\textbullet$ Java / 5}}
+\urlstyle{same}
 
-% Projects text
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
 
-\education{
-\textbf{B.S., Computer Science} (GPA: 3.5) \\
-\textbf{Minor: Mathematics} \\
-University of Nebraska-Lincoln \\
-2017 - 2020 \\ 
-\newline
-\textbf{Relevant Courses}: 
-\begin{itemize}
-    \item Computer Science I, II
-    \item Discrete Mathematics
-    \item Intro to Machine Learning
-    \item Data Structures and Algorithms
-    \item Computer Organization
-    \item Operating System Kernel
-    \item Programming Language Concepts
-    \item Software Engineering
-\end{itemize}
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
 }
 
-%----------------------------------------------------------------------------------------
-%	 PERSONAL INFORMATION
-%----------------------------------------------------------------------------------------
-% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+\newcommand{\resumeItemNoBullet}[2]{
+  \item[]\small{
+    \hspace{-9pt}\textbf{#1}{: #2 \vspace{-6pt}}
+  }
+}
 
-\cvname{Huy Vuong} % Your name
-\cvjobtitle{B.S. Computer Science} % Job
-% title/career
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item[]
+  \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+      \hspace{-10pt}\textbf{#1} & #2 \\
+      \hspace{-10pt}\textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
 
-\cvlinkedin{/in/huynvuong/}
-\cvgithub{HuyNVuong}
-\cvnumberphone{(415) 818-7070} % Phone number
-\cvmail{huynguyenvuong99@gmail.com} % Email address
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
-%----------------------------------------------------------------------------------------
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% custom commands
+% \titleformat{\chapter}[display]
+%     {\filcenter\normalfont\Huge\bfseries}
+%     {\MakeUppercase{\chaptertitlename}\ \thechapter}
+%     {20pt}
+%     {}
+\newcommand{\shorterSection}[1]{\vspace{-10pt}\section{\textbf{\Large #1}}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \begin{document}
 
-\makeprofile % Print the sidebar
-%----------------------------------------------------------------------------------------
-%	 EXPERIENCE
-%----------------------------------------------------------------------------------------
+%----------HEADING-----------------
+\begin{center}
+  \small \textbf{\href{https://github.com/HuyNVuong}{\huge Huy N. Vuong}} \\
+  \vspace{5pt}
+   \href{https://www.linkedin.com/in/huynvuong/}{{/in/huynvuong}} $\vert$ 
+  \href{https://github.com/HuyNVuong}{github.com/HuyNVuong}\\
+  \small \href{mailto:huy.vuong@huskers.unl.edu}{{huy.vuong@huskers.unl.edu}} $\vert$  (415) 818-7070 
+\end{center}
 
-\section{Experience}
-
-
-
-\begin{twenty} % Environment for a list with descriptions
-\twentyitem
-    	{May 2019 -}
-    	{Present}
-        {Werner Enterprise}
-        {}
-        {ITS - Software Developer Intern}
-        {\begin{itemize}
-            \item Worked as a full-stack web developer
-            \item Getting involved in Agile Software development team. 
-            \item Learned about trucking industry as well as coop orating with different departments
-        \end{itemize}
-        }
-        \\
-\twentyitem
-    	{Feb 2019 -}
-    	{Present}
-        {Dept. of Biochemistry}
-        {\href{https://cellcollective.org/}{cellcollective.org}}
-        {Associate Software Developer}
-        {\begin{itemize}
-            \item Using variations of high level APIs to support different features of website
-            \item Wrote 1000+ lines of code in JavaScript performing Behavioral Development Testing
-            \item Create bots for automation and Continuous Integration and Continuous Deliverance
-        \end{itemize}
-        }
-        \\
-\twentyitem
-    	{Aug 2018 -}
-		{May 2019}
-        {Dept. of Computer Science and Engineering}
-        {}
-        {Undergraduate Teaching Assistant}
-        {\begin{itemize}
-        \item Assisted in Computer Science I, II, III
-        \item Supervising labs, grading homeworks, holding office hours and online communication to help students with course problem
-        \end{itemize}
-        }
-        \\
-\twentyitem
-	{May 2018 -}
-	{Sep 2018}
-    {Information Technology Service at UNL}
-    {}
-    {Student Worker}
-    {
-    {\begin{itemize}
-    \item Provided general university information and technical support
-    \item Troubleshooted university accounts and technical problems
-    \item Directed switchboards call around university
-    \end{itemize}}
+%-----------EDUCATION-----------------
+\shorterSection{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Nebraska - Lincoln}{Lincoln, NE}
+      {Bachelors of Science in Computer Science;  GPA: 3.4/4.0}{Expected May 2021}{
+      \resumeItemNoBullet{Relevant Coursework}{Machine Learning, Software Engineering, Programming Language Concepts, Data Structure and Algorithms, Object Oriented Programming, Linear Algebra}
     }
+    % \resumeSubheading
+    %   {Amity University}{New Delhi, India}
+    %   {Bachelor of Technology in Computer Science \& Engineering;  GPA: 3.32/4.0 (8.28/10.0)}{Aug 2013 - May 2017}
+    %   \resumeItemNoBullet{Relevant Coursework}{Analysis \& Design of Algorithms, Data Structures using C, Operating Systems, Pattern Recognition}
+  \resumeSubHeadingListEnd
+  \vspace{5pt}
+%-----------SKILLS-----------------
+\shorterSection{Skills}
+  \resumeSubHeadingListStart
+  \small
+    \item{
+     \textbf{Languages}{: Python, Java, JavaScript, TypeScript, HTML, CSS, C, C++, \LaTeX}
+     \hfill
     
-        
-	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
-\end{twenty}
+    }
+    \vspace{-5pt}
+    \item{
+      \textbf{Technologies}{: Spring, Angular, NodeJS, Maven, Git, JIRA, Confluence}
+      \hfill
+    }
+    \vspace{-5pt}
+    \item{
+      \textbf{Libraries}{: Lombok, Spring, Selenium, HttpClient, tkinter, Google API, CypressJS}
+      \hfill
+    }
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\shorterSection{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Werner Enterprises}{Omaha, NE}
+      {Information Technology - Fullstack Developer Intern}{May 2019 - Present}
+      \resumeItemListStart
+        \resumeItem{Intermodal Management Dashboard}
+          {Designed a Fullstack web application that manages Werner's Intermodal ITS, Logistic data and Business data
+            \begin{itemize}
+               
+                \item Use Spring boot with Maven for processing data, creating and handling OAuth2.0 authentication and managing REST endpoint
+                \item Use Angular to fetch data from REST endpoint and present in a beautiful format using Typescript and Ngx Bootstraps
+                
+            \end{itemize}
+          }
+        \resumeItem{Agile Software Development - Scrum Team}
+          { Working in teams developing Intermodal software, as well as fixing new and existing software issues. }
+        \small \item
+          {Getting a well rounded understanding of the transportation/ trucking industry as well as different departments in Werner Enterprises
+          }
+          
+      \resumeItemListEnd
 
 
-%----------------------------------------------------------------------------------------
-%	 PROJECTS
-%----------------------------------------------------------------------------------------
-\section{Projects}
-\begin{twenty}
+    \resumeSubheading
+      {Helikar Lab}{Lincoln, NE}
+      {Software Developer - Student Worker}{Jan 2019 - May 2019}
+      \resumeItemListStart
+        \resumeItem{Internationalization}
+            {Wrote a script in Python that translate different languages depend on user's language preferences.}
+        \resumeItem{Automation}
+            {Created different script using YAML to automate tedious tasks such as update dependencies, detect on changes, merging git branches, avoiding human errors}
+            \small \item Wrote 1000+ lines of code in Javascript perform Behavioral Development Testing for the website
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Dept. of Computer Science and Engineering}{Lincoln, NE}
+      {Undergraduate Teaching Assitant}{August 2018 - May 2019}
+      \resumeItemListStart
+        \small
+            \item Assisted in Computer Science I, II, III
+            \item Responsible in Grading, Supervising Labs, Holding office hours
+            \item Held regular meeting with student making sure that they are doing well in class
+      \resumeItemListEnd
 
-    \twentyitem
-    	{June 2019 - }
-		{August 2019}
-        {Werner Dashboard}
-        {} % Link to GitHub goes here
-        {}
-        {
-        {\begin{itemize}
-        \item Werner's full-stack web application that gathers statistic of company performances and present them in a beautiful dynamic web application.
-        \item Used Spring Hibernate with REST API to handle back-end data and Angular 8 to display data dynamically
-        
-		\end{itemize}}
-        }
-    \\
-    
-    \twentyitem
-    	{Feb 2019 - }
-		{March 2019}
-        {Internalization of Cell Collective}
-        {} % Link to GitHub goes here
-        {}
-        {
-        {\begin{itemize}
-        \item Performed translation of website in several different languages using high level API in Python
-        \item Created automated script that detects user's language preferences
-		\end{itemize}}
-        }
-    \\
-	\twentyitem
-    	{Jan 2019 - }
-		{May 2019}
-        {City Traffic Simulator}
-        {} % Link to GitHub goes here
-        {}
-        {
-       	Simluation of traffic management system
-       	
-       	\textbf{Technologies:}
-        {\begin{itemize}
-        \item Python 3.
-        \item OOP - Object Oriented Programming : define real world entities 
-        \item UML - Unified Modelling Language : define and describe entities and system relations
-        through Models and Diagrams
-		\end{itemize}}
-        }
-    \\
-        \twentyitem
-    	{Jan 2019}
-		{}
-        {UNL survaillence map}
-        {\href{https://datduyng.github.io/cornhack2019/}{Website}} % Link to GitHub goes here
-        {}
-        {
-       	\textbf{Technologies:}
-        {\begin{itemize}
-        \item Javascript, HTML/CSS, Python.
-        \item Using method of Deep Learning to detect violence in video
-        \item Used Javascript and CSS to create dynamic representation of data
-		\end{itemize}}
-        }
-        \\
+    \resumeSubheading
+      {University of Nebraska - Lincoln}{Lincoln, NE}
+      {Information Technology Service - Student Worker}{May 2018 - August 2018}
+      \resumeItemListStart
+        \small
+            \item Provided general university information and technical support
+            \item Troubleshooted university accounts and technical problems
+            \item Directed switchboard call around university
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
 
-\end{twenty}
-
-
-%----------------------------------------------------------------------------------------
-%	 INVOLVEMENTS
-%----------------------------------------------------------------------------------------
-
-% \section{Involvements}
-% \begin{twenty}
-	
-%     \twentyitem
-%     	{Aug 2018 - }
-% 		{Present}
-%         {Hackathon}
-%         {}
-%         {24 hours programming contest hosted by University of Nebraska - Lincoln}
-%         {
-%         {\begin{itemize}
-%         \item 2018 UNL Hackathon participant
-%         \item 2019 UNL Hackathon participant
-% 		\end{itemize}}
-%         }
-%     \\
-%     \twentyitem
-%     	{Aug 2018 -}
-% 		{Present}
-%         {UNL Initialize}
-%         {}
-%         {}
-%         {
-%         {\begin{itemize}
-%         \item Back-end programmer in Dev team 
-%         \item Phases and website developer for Coding and Coffee
-% 		\end{itemize}}
-%         }
-% \end{twenty}
-
-\end{document} 
+%-----------PROJECTS-----------------
+\shorterSection{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{City Traffic Simulation}
+     {Realtime simulation of traffic in a city
+        \vspace{-5pt}
+        \begin{itemize}
+            \item Used Python tkinter as a framework to create a desktop application and generating graphics
+            \item Applied Waterfall model strategy to develop the Software which includes: Requirements, Analysis, Design, Implementation, Testing and Maintenance
+            \item Implemented Breath First Search to help a car determine shortest paths to it's destination
+        \end{itemize}
+     }
+    \resumeSubItem{UNL Surveillance System}{An application help detects violence around campus using machine learning}
+    \vspace{3pt}
+    \resumeSubItem{Invoice Report System}{Newly implemented report system that replaces old green screen
+    \vspace{-5pt}
+        \begin{itemize}
+            \item Applied Object Oriented Programming to help describe different type of customers, products... programmatically
+            \item Created database and optimize SQL queries to organizes tables and store data
+            \item Created persistence API to maintain the program and display data from database
+        \end{itemize}
+     }
+  \resumeSubHeadingListEnd
+  \shorterSection{Organizations}
+   \resumeSubHeadingListStart
+      \small
+        \item{VSA - Vietnamese Student Organization}: August 2017 - Present
+        \vspace{-5pt}
+        \item{Member of Coding \& Coffer and UNL Development Team}: August 2018 - May 2019
+    \resumeSubHeadingListEnd
+% %-----------Addtional Experience & Achievements-----------------
+% \shorterSection{Additional Experience \& Achievements}
+%   \resumeSubHeadingListStart
+%   \small
+%     \item{Presented poster on \textit{Tiramisu DenseNet Architecture for Precise Segmentation} for Intel AI at \textbf{CVPR 2018}}
+%     \vspace{-5pt}
+%     \item{Selected as an \textbf{Intel AI Student Ambassador} (only 150 students) to research, publish, and share work on machine learning and deep learning}
+%     \vspace{-5pt}
+%     \item{Won \textit{Best Microsoft Hack} out of 220 teams at \textbf{HackHarvard 2017}}
+%     \vspace{-5pt}
+%     \item{Placed 16/50 at Google Games: Campus Edition 2017 at UIC}
+%     \vspace{-5pt}
+%     \item{Won \textit{Best Technical Innovation} award (out of 800 students) at \textbf{Amity University Convocation 2017}}
+%     \vspace{-5pt}
+%     \item{Elected as a \textit{Vice-Chair} for \textbf{ACM Amity Student Chapter} out of 800 students at Amity University based on high-achieving and technically strong undergraduate students}
+%   \resumeSubHeadingListEnd
+% %-------------------------------------------
+\end{document}
