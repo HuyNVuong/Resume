@@ -6,7 +6,13 @@
 %------------------------
 
 \documentclass[letterpaper,10pt]{article}
-
+% Import custom font
+\usepackage[default]{lato}
+\usepackage[T1]{fontenc}
+% \usepackage[default]{roboto}  
+% \usepackage[T1]{fontenc}
+% \usepackage[default]{opensans} 
+% \usepackage[T1]{fontenc}
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -43,45 +49,45 @@
 \titleformat{\section}{
   \vspace{-6pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
-
+\definecolor{heading-lightblue}{RGB}{122, 164, 211}
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[2]{
   \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
+  \textbf{#1}{: #2 \vspace{-2pt}}
   }
 }
 
 \newcommand{\resumeItemNoBullet}[2]{
   \item[]\small{
-    \hspace{-9pt}\textbf{#1}{: #2 \vspace{-6pt}}
+  \hspace{-9pt}\textbf{#1}{: #2 \vspace{-6pt}}
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\item[]
   \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
-      \hspace{-10pt}\textbf{#1} & #2 \\
-      \hspace{-10pt}\textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+    \hspace{-10pt}\textbf{#1} & #2 \\
+    \hspace{-10pt}\textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*] %\fontseries{l}\selectfont% 
+}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
-% custom commands
-% \titleformat{\chapter}[display]
-%     {\filcenter\normalfont\Huge\bfseries}
-%     {\MakeUppercase{\chaptertitlename}\ \thechapter}
-%     {20pt}
-%     {}
-\newcommand{\shorterSection}[1]{\vspace{-10pt}\section{\textbf{\Large #1}}}
+\titleformat{\chapter}[display]
+  {\filcenter\normalfont\Huge\bfseries}
+  {\MakeUppercase{\chaptertitlename}\ \thechapter}
+  {20pt}
+  {}
+\newcommand{\shorterSection}[1]{\vspace{-10pt}\section{\textcolor{heading-lightblue}{\textbf{\Large #1}}}}
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -93,151 +99,126 @@
 \begin{center}
   \small \textbf{\href{https://github.com/HuyNVuong}{\huge Huy N. Vuong}} \\
   \vspace{5pt}
-   \href{https://www.linkedin.com/in/huynvuong/}{{/in/huynvuong}} $\vert$ 
+  \href{https://www.linkedin.com/in/huynvuong/}{{/in/huynvuong}} $\vert$ 
   \href{https://github.com/HuyNVuong}{github.com/HuyNVuong}\\
-  \small \href{mailto:huy.vuong@huskers.unl.edu}{{huy.vuong@huskers.unl.edu}} $\vert$  (415) 818-7070 
+  \small \href{mailto:huynguyenvuong99@gmail.com}{{huynguyenvuong99@gmail.com}} $\vert$  (415) 818-7070 
 \end{center}
 
 %-----------EDUCATION-----------------
 \shorterSection{Education}
   \resumeSubHeadingListStart
-    \resumeSubheading
-      {University of Nebraska - Lincoln}{Lincoln, NE}
-      {Bachelors of Science in Computer Science;  GPA: 3.4/4.0}{Expected May 2021}{
-      \resumeItemNoBullet{Relevant Coursework}{Machine Learning, Software Engineering, Programming Language Concepts, Data Structure and Algorithms, Object Oriented Programming, Linear Algebra}
-    }
-    % \resumeSubheading
-    %   {Amity University}{New Delhi, India}
-    %   {Bachelor of Technology in Computer Science \& Engineering;  GPA: 3.32/4.0 (8.28/10.0)}{Aug 2013 - May 2017}
-    %   \resumeItemNoBullet{Relevant Coursework}{Analysis \& Design of Algorithms, Data Structures using C, Operating Systems, Pattern Recognition}
+  \resumeSubheading
+    {University of Nebraska - Lincoln}{Lincoln, NE}
+    {Bachelors of Science in Computer Science;  GPA: 3.4/4.0}{Expected May 2021}
+    \resumeItemListStart
+      \resumeItem{Minors}{Mathematics and Business Administration}
+    \resumeItemListEnd
   \resumeSubHeadingListEnd
   \vspace{5pt}
 %-----------SKILLS-----------------
 \shorterSection{Skills}
   \resumeSubHeadingListStart
   \small
-    \item{
-     \textbf{Languages}{: Python, TypeScript, Java, JavaScript, HTML, Sass, Golang, C, \LaTeX}
-     \hfill
-    
-    }
-    \vspace{-5pt}
-    \item{
-      \textbf{Technologies}{: Spring, Angular, React, NodeJS, Maven, Git, JIRA, Confluence, Zenhub}
-      \hfill
-    }
-    \vspace{-5pt}
-    \item{
-      \textbf{Libraries}{: Lombok, Spring, Selenium, HttpClient, tkinter, Google API, Cypress}
-      \hfill
-    }
-\resumeSubHeadingListEnd
+  \item{
+    \textbf{Languages}{: Golang, TypeScript, Java, JavaScript, HTML, SQL, Python, C, \LaTeX}
+    \hfill
+  }
+  \vspace{-5pt}
+  \item{
+    \textbf{Front-end Framework/Libraries}{: Angular, React, Adobe ColdFusion, Ngx-bootstrap, tkinter (Native)}
+    \hfill
+  }
+  \vspace{-5pt}
+  \item{
+    \textbf{Back-end Framework/Libraries}{: Golang gin-gonic, Java Spring-boot, Maven, Azure, IBM DB2}
+    \hfill
+  }
+  \vspace{-5pt}
+  \item{
+    \textbf{Technologies}{: Github, Sub-version, Jira, Confluence}
+    \hfill
+  }
+  \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------------
-\shorterSection{Experience}
+\shorterSection{Experiences}
+
   \resumeSubHeadingListStart
-    \resumeSubheading
-      {Werner Enterprises}{Omaha, NE}
-      {Technical Intern}{Sep 2019 - Present}
-      \resumeItemListStart
-        \small
-            \item Working in Scrum Team in solving and handling different stories during each sprint
-            \item Helping in develop an internal web application that uses by hundreds of employee
-            \item Learning about the business and apply them to the software to create better and easier user experience
-      \resumeItemListEnd
-    \resumeSubheading
-      {DMSi Software}{Lincoln, NE}
-      {Design Studio Associate Developer - Capstone Program}{Sep 2019 - Present}
-      \resumeItemListStart
-        \small
-            \item Working with teams designing a full stack internal web application for door configuration
-            \item Using different Golang libraries to implement dynamic image generations for each door parts and React to present them in a configuration dashboard
-            \item Code review with peers for each pull request to avoid and bugs and conflicts
-            \item Learn about doors and the industry to optimize user expereience
-      \resumeItemListEnd
-    \resumeSubheading
-      {Werner Enterprises}{Omaha, NE}
-      {Technical Intern - Full Stack}{May 2019 - Aug 2019}
-      \resumeItemListStart
-        \resumeItem{Intermodal Management Dashboard}
-          {Designed a Fullstack internal web application that manages Werner's Intermodal ITS, Logistic data and Business data
-            \begin{itemize}
-                \item Use Spring boot with Maven for processing data, creating and handling Open Authentication and managing REST endpoint
-                \item Use Angular to fetch data from REST endpoint and present in a beautiful format using Typescript and Ngx Bootstraps
-                
-            \end{itemize}
-          }
-        \small \item
-          {Getting a well rounded understanding of the transportation/ trucking industry as well as different departments in Werner Enterprises
-          }
-          
-      \resumeItemListEnd
-
-
-    \resumeSubheading
-      {Helikar Lab}{Lincoln, NE}
-      {Software Developer - Student Worker}{Jan 2019 - May 2019}
-      \resumeItemListStart
-        \resumeItem{Internationalization}
-            {Wrote a script in Python that translate different languages depend on user's language preferences.}
-        \resumeItem{Automation}
-            {Created different script using YAML to automate tedious tasks such as update dependencies, detect on changes, merging git branches, avoiding human errors}
-            \small \item Wrote 1000+ lines of code in Javascript perform Behavioral Development Testing for the website
-      \resumeItemListEnd
-      
-    \resumeSubheading
-      {Dept. of Computer Science and Engineering}{Lincoln, NE}
-      {Undergraduate Teaching Assitant}{August 2018 - May 2019}
-      \resumeItemListStart
-        \small
-            \item Assisted in Computer Science I, II, III
-            \item Responsible in Grading, Supervising Labs, Holding office hours
-            \item Held regular meeting with student making sure that they are doing well in class
-      \resumeItemListEnd
-      
+  
+  \resumeSubheading
+    {Speedway Motors}{Lincoln, NE}
+    {Software Engineering Intern}{May 2020 - Present}
+    \resumeItemListStart
+      \small
+        \item Participate in the designing, coding, and debugging of multiple software applications in various software languages
+        \item Practice trunk-based development and continous development
+        \item Working on investigating GraphQL and writing single page React application
+        \item Practice business agility, Team Pair or Mob programming to attack a challenging problem together
+        \item \textbf{Technologies: } React, GraphQL, Subversion
+    \resumeItemListEnd
     
+  \resumeSubheading
+    {DMSi Software}{Lincoln, NE}
+    {Associate Software Developer}{Sep 2019 - May 2020}
+    \resumeItemListStart
+      \small
+        \item Jeffrey S. Raikes School honors capstone program - Dynamic Product Configuration
+        \item Created and managed ImageGeneration API in performing image stitching, layering, mutating and send them as REST
+        \item Created thousands of data entries in Azure Database to give image stitching instructions
+        \item Wrote React pipelines to validate product component and store them on cache
+        \item Practiced Agile Software Development cycle, bi-weekly sprint and monthly releases
+        \item \textbf{Technologies: } React, Golang, Azure, TSQL, Git 
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Werner Enterprises}{Omaha, NE}
+    {Software Developer Intern}{May 2019 - May 2020}
+    \resumeItemListStart
+      \small
+        \item Created a single page management dashboard to keep track of company's intranet performances
+        \item Wrote several Angular pipe to optimize segment search engine and used across different internal applications
+        \item Worked with Spring-Boot MVC and queried data from IBM DB2 and expose them to REST endpoint serving various business value
+        \item Implemented Google ReCaptcha in Adobe ColdFusion for several legacy applications
+        \item Practiced Scrum, daily stand ups, bi-weekly Release
+        \item \textbf{Technologies:} Atlassian products, Spring-boot MVC, Angular, Ngx Bootstrap, Tortoise Subversion
+    \resumeItemListEnd
    
+  \resumeSubheading
+    {Dept. of Computer Science and Engineering}{Lincoln, NE}
+    {Undergraduate Teaching Assistant}{August 2018 - May 2019}
+    \resumeItemListStart
+      \small
+        \item Assisted in Computer Science I, II, III
+        \item Responsible in Grading, Supervising Labs, Holding office hours
+        \item Held regular meeting with student making sure that they are doing well in class
+    \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------------
 \shorterSection{Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{City Traffic Simulation}
-     {Realtime simulation of traffic in a city
-        \vspace{-5pt}
-        \begin{itemize}
-            \item Used Python tkinter as a framework to create a desktop application and generating graphics
-            \item Applied Waterfall model strategy to develop the Software which includes: Requirements, Analysis, Design, Implementation, Testing and Maintenance
-            \item Implemented Breath First Search to help a car determine shortest paths to it's destination
-        \end{itemize}
-     }
-    \resumeSubItem{UNL Surveillance System}{An application help detects violence around campus using machine learning}
-    \vspace{3pt}
-    \resumeSubItem{Invoice Report System}{Newly implemented report system that replaces old green screen
+  \resumeSubItem{Dynamic Product Configurator Image Generation API}
+  {Project worked in team DMSi for Jeffrey S. Raikes honors program
     \vspace{-5pt}
-        \begin{itemize}
-            \item Applied Object Oriented Programming to help describe different type of customers, products... programmatically
-            \item Created database and optimize SQL queries to organizes tables and store data
-            \item Created persistence API to maintain the program and display data from database
-        \end{itemize}
-     }
+    \begin{itemize}
+      \item High-business value API that support and handle image generation for DMSi Product Configurator
+      \item "Over half of the doors configured in the United States will soon be configured on this system" - DMSi executive
+    \end{itemize}
+  }
+  \resumeSubItem{Werner Intermodal Dashboard}
+  {Self-contained project developed for Werner Enterprise
+    \vspace{-5pt}
+    \begin{itemize}
+      \item Provided a management dashboard for the Intermodal Logistic team to keep track of their productivity
+      \item Built extensible code that can be used across teams and departments
+    \end{itemize}
+  }
+  \resumeSubItem{City Traffic Simulator}{Software Engineering Project
+    \vspace{-5pt}
+    \begin{itemize}
+      \item Built a native tkinter application to stimulate the flow of traffic in a city
+      \item Implemented Best First Search to and its visualization to support car path finding
+    \end{itemize}
+  }
   \resumeSubHeadingListEnd
-
-% %-----------Addtional Experience & Achievements-----------------
-% \shorterSection{Additional Experience \& Achievements}
-%   \resumeSubHeadingListStart
-%   \small
-%     \item{Presented poster on \textit{Tiramisu DenseNet Architecture for Precise Segmentation} for Intel AI at \textbf{CVPR 2018}}
-%     \vspace{-5pt}
-%     \item{Selected as an \textbf{Intel AI Student Ambassador} (only 150 students) to research, publish, and share work on machine learning and deep learning}
-%     \vspace{-5pt}
-%     \item{Won \textit{Best Microsoft Hack} out of 220 teams at \textbf{HackHarvard 2017}}
-%     \vspace{-5pt}
-%     \item{Placed 16/50 at Google Games: Campus Edition 2017 at UIC}
-%     \vspace{-5pt}
-%     \item{Won \textit{Best Technical Innovation} award (out of 800 students) at \textbf{Amity University Convocation 2017}}
-%     \vspace{-5pt}
-%     \item{Elected as a \textit{Vice-Chair} for \textbf{ACM Amity Student Chapter} out of 800 students at Amity University based on high-achieving and technically strong undergraduate students}
-%   \resumeSubHeadingListEnd
-% %-------------------------------------------
 \end{document}
